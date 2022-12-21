@@ -8,7 +8,7 @@ function App() {
     return (
         <>
             {/*Microtask 1*/}
-            <Header />
+            <Header title={"New Header"}/>
             <Body/>
             <Footer/>
         </>
