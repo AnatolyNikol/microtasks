@@ -1,9 +1,13 @@
 import React from "react";
 
-export const Body = () => {
+type BodyTitleType = {
+    titleForBody: string
+}
+
+export const Body = (props: BodyTitleType) => {
     return (
         <>
-            Body
+            {props.titleForBody}
         </>
     )
 }
