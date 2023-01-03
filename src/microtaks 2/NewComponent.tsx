@@ -12,6 +12,10 @@ type StudentType = {
 
 export const NewComponent = (props:NewComponentType) => {
     return (
-        <div>new component</div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
     )
 }
