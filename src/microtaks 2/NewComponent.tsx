@@ -31,17 +31,18 @@ export const NewComponent = (props: NewComponentType) => {
             </ul>
             <table>
                 <tr>
-                    <th>Month</th>
-                    <th>Savings</th>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
                 </tr>
-                <tr>
-                    <td>January</td>
-                    <td>$100</td>
-                </tr>
-                <tr>
-                    <td>February</td>
-                    <td>$80</td>
-                </tr>
+                {topCars.map((objectFromTopCarsArray, index) => {
+                    debugger
+                    return (
+                            <tr key={index + 1}>
+                                <td>{objectFromTopCarsArray.manufacturer}</td>
+                                <td>{objectFromTopCarsArray.model}</td>
+                            </tr>
+                    )
+                })}
             </table>
         </>
     )
