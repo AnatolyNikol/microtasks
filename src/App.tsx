@@ -6,7 +6,7 @@ import {Footer} from "./microtask 1/Footer";
 import {NewComponent} from "./microtaks 2/NewComponent";
 
 function App() {
-
+    {/*Microtask 2*/}
     let [students, setStudents] = useState([
         {id: 1, name: "James", age: 8},
         {id: 2, name: "Robert", age: 18},
@@ -27,6 +27,7 @@ function App() {
             <Header titleForHeader={"New Header"}/>
             <Body titleForBody={"New Body"}/>
             <Footer titleForFooter={"New Footer"}/>
+            {/*Microtask 2*/}
             <NewComponent students={students}/>
         </>
     );
