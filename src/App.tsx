@@ -5,6 +5,7 @@ import {Body} from "./microtask 1/Body";
 import {Footer} from "./microtask 1/Footer";
 import {NewComponent} from "./microtask 2/NewComponent";
 import {ButtonComponent} from "./microtask 3/ButtonComponent";
+import UniversalButtonComponent from "./microtask 3/UniversalButtonComponent";
 
 function App() {
     {/*Microtask 2*/}
@@ -31,7 +32,8 @@ function App() {
             {/*Microtask 2*/}
             <NewComponent students={students}/>
             {/*Microtask 3*/}
-            <ButtonComponent/>
+            {/*<ButtonComponent/>*/}
+            <UniversalButtonComponent/>
         </>
     );
 }
