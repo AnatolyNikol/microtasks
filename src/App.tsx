@@ -23,6 +23,14 @@ function App() {
         {id: 11, name: "Christopher", age: 100},
     ]);
 
+    const Button1Func = () => {
+        console.log('I`m Vasya!')
+    }
+
+    const Button2Func = () => {
+        console.log('I`m Ivan!')
+    }
+
     return (
         <>
             {/*Microtask 1*/}
@@ -33,8 +41,8 @@ function App() {
             <NewComponent students={students}/>
             {/*Microtask 3*/}
             {/*<ButtonComponent/>*/}
-            <UniversalButtonComponent name={"MyYouTubeChanel-1"}/>
-            <UniversalButtonComponent name={"MyYouTubeChanel-2"}/>
+            <UniversalButtonComponent name={'MyYouTubeChanel-1'} callBack={Button1Func}/>
+            <UniversalButtonComponent name={'MyYouTubeChanel-2'} callBack={Button2Func}/>
         </>
     );
 }
