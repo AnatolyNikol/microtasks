@@ -33,7 +33,8 @@ function App() {
             <NewComponent students={students}/>
             {/*Microtask 3*/}
             {/*<ButtonComponent/>*/}
-            <UniversalButtonComponent/>
+            <UniversalButtonComponent name={"MyYouTubeChanel-1"}/>
+            <UniversalButtonComponent name={"MyYouTubeChanel-2"}/>
         </>
     );
 }

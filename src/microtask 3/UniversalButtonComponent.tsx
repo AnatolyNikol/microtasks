@@ -1,10 +1,13 @@
 import React from "react";
 
-const UniversalButtonComponent = () => {
+type UniversalButtonComponentType = {
+    name: string
+}
+
+const UniversalButtonComponent = (props: UniversalButtonComponentType) => {
     return (
         <>
-            <button>MyYouTubeChanel-1</button>
-            <button>MyYouTubeChanel-2</button>
+            <button>{props.name}</button>
         </>
     )
 }
