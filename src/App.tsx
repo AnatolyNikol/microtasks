@@ -3,7 +3,8 @@ import './App.css';
 import {Header} from "./microtask 1/Header";
 import {Body} from "./microtask 1/Body";
 import {Footer} from "./microtask 1/Footer";
-import {NewComponent} from "./microtaks 2/NewComponent";
+import {NewComponent} from "./microtask 2/NewComponent";
+import {ButtonComponent} from "./microtask 3/ButtonComponent";
 
 function App() {
     {/*Microtask 2*/}
@@ -29,6 +30,8 @@ function App() {
             <Footer titleForFooter={"New Footer"}/>
             {/*Microtask 2*/}
             <NewComponent students={students}/>
+            {/*Microtask 3*/}
+            <ButtonComponent/>
         </>
     );
 }

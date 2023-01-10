@@ -35,7 +35,6 @@ export const NewComponent = (props: NewComponentType) => {
                     <th>Model</th>
                 </tr>
                 {topCars.map((objectFromTopCarsArray, index) => {
-                    debugger
                     return (
                             <tr key={index + 1}>
                                 <td>{objectFromTopCarsArray.manufacturer}</td>
