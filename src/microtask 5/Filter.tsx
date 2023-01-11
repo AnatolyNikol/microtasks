@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 
+type FilterType = 'All' | 'Ruble' | 'Dollar'
+
 export const Filter = () => {
 
     const [money, setMoney] = useState([
@@ -13,7 +15,7 @@ export const Filter = () => {
         {banknote: "ruble", nominal: 50, number: "h123456789"}
     ])
 
-    const [filter, setFilter] = useState('all')
+    const [filter, setFilter] = useState<FilterType>('All');
 
     let currentMoney = money;
     if (filter === 'Dollar') {
@@ -23,7 +25,7 @@ export const Filter = () => {
         currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble')
     }
 
-    const onClickFilterHandler = (buttonName:string) => {
+    const onClickFilterHandler = (buttonName:FilterType) => {
         setFilter(buttonName)
     }
 
@@ -40,8 +42,8 @@ export const Filter = () => {
                     )
                 })}
                     <button onClick={() => onClickFilterHandler("All")}>All</button>
-                    <button onClick={() => onClickFilterHandler("Ruble")}>Ruble</button>
-                    <button onClick={() => onClickFilterHandler("Dollar")}>Dollar</button>
+                    <button onClick={() => onClickFilterHandler("Ruble")}>Rubles</button>
+                    <button onClick={() => onClickFilterHandler("Dollar")}>Dollars</button>
             </ul>
         </>
     )
