@@ -7,6 +7,7 @@ import {NewComponent} from "./microtask 2/NewComponent";
 import {ButtonComponent} from "./microtask 3/ButtonComponent";
 import UniversalButtonComponent from "./microtask 3/UniversalButtonComponent";
 import {Hook} from "./microtask 4/Hook";
+import {Filter} from "./microtask 5/Filter";
 
 function App() {
     {/*Microtask 2*/}
@@ -51,6 +52,8 @@ function App() {
             <UniversalButtonComponent name={'Stupid Button'} callBack={Button3Func}/>
             {/*Microtask 4*/}
             <Hook/>
+            {/*Microtask 5*/}
+            <Filter/>
         </>
     );
 }
