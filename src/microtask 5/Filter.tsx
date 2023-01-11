@@ -13,16 +13,18 @@ export const Filter = () => {
         {banknote: "ruble", nominal: 50, number: "h123456789"}
     ])
 
+    const [filter, setFilter] = useState('all')
+
     let currentMoney = money;
-    // if (buttonName === 'Dollar') {
-    //     currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'dollar')
-    // }
-    // if (buttonName === 'Ruble') {
-    //     currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble')
-    // }
+    if (filter === 'Dollar') {
+        currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'dollar')
+    }
+    if (filter === 'Ruble') {
+        currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble')
+    }
 
     const onClickFilterHandler = (buttonName:string) => {
-
+        setFilter(buttonName)
     }
 
     return (
