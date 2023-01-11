@@ -6,6 +6,7 @@ import {Footer} from "./microtask 1/Footer";
 import {NewComponent} from "./microtask 2/NewComponent";
 import {ButtonComponent} from "./microtask 3/ButtonComponent";
 import UniversalButtonComponent from "./microtask 3/UniversalButtonComponent";
+import {Hook} from "./microtask 4/Hook";
 
 function App() {
     {/*Microtask 2*/}
@@ -48,6 +49,8 @@ function App() {
             <UniversalButtonComponent name={'MyYouTubeChanel-1'} callBack={() => Button1Func('I`m Vasya!', 21, 'Live in Minsk')}/>
             <UniversalButtonComponent name={'MyYouTubeChanel-2'} callBack={() => Button2Func('I`m Ivan!')}/>
             <UniversalButtonComponent name={'Stupid Button'} callBack={Button3Func}/>
+            {/*Microtask 4*/}
+            <Hook/>
         </>
     );
 }
