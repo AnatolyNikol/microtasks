@@ -13,9 +13,15 @@ export const Filter = () => {
         {banknote: "ruble", nominal: 50, number: "h123456789"}
     ])
 
-    let currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble')
+    let currentMoney = money;
+    // if (buttonName === 'Dollar') {
+    //     currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'dollar')
+    // }
+    // if (buttonName === 'Ruble') {
+    //     currentMoney = money.filter((filteredMoney) => filteredMoney.banknote === 'ruble')
+    // }
 
-    const onClickFilterHandler = () => {
+    const onClickFilterHandler = (buttonName:string) => {
 
     }
 
@@ -31,9 +37,9 @@ export const Filter = () => {
                         </li>
                     )
                 })}
-                    <button onClick={onClickFilterHandler}>All</button>
-                    <button onClick={onClickFilterHandler}>Ruble</button>
-                    <button onClick={onClickFilterHandler}>Dollar</button>
+                    <button onClick={() => onClickFilterHandler("All")}>All</button>
+                    <button onClick={() => onClickFilterHandler("Ruble")}>Ruble</button>
+                    <button onClick={() => onClickFilterHandler("Dollar")}>Dollar</button>
             </ul>
         </>
     )
