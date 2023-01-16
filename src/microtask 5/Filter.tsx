@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import UniversalButtonComponent from "../microtask 3/UniversalButtonComponent";
 
 type FilterType = 'All' | 'Ruble' | 'Dollar'
 
@@ -41,9 +42,12 @@ export const Filter = () => {
                         </li>
                     )
                 })}
-                    <button onClick={() => onClickFilterHandler("All")}>All</button>
-                    <button onClick={() => onClickFilterHandler("Ruble")}>Rubles</button>
-                    <button onClick={() => onClickFilterHandler("Dollar")}>Dollars</button>
+                    {/*<button onClick={() => onClickFilterHandler("All")}>All</button>*/}
+                    {/*<button onClick={() => onClickFilterHandler("Ruble")}>Rubles</button>*/}
+                    {/*<button onClick={() => onClickFilterHandler("Dollar")}>Dollars</button>*/}
+                <UniversalButtonComponent name={"All"} callBack={() => onClickFilterHandler("All")}/>
+                <UniversalButtonComponent name={"Ruble"} callBack={() => onClickFilterHandler("Ruble")}/>
+                <UniversalButtonComponent name={"Dollar"} callBack={() => onClickFilterHandler("Dollar")}/>
             </ul>
         </>
     )
